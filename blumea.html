@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blumea (Blumea balsamifera) Bukidnon Medicinal Plants</title>
+  <link rel="stylesheet" href="styles.css" /> 
+</head>
+<body>
+  <nav class="main-navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo" class="navbar-logo">
+    </a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="plants.html">Plants</a>
+      <a href="about.html">About Us</a>
+      <a href="#" class="map-btn" onclick="openMapModal(); return false;">Map</a>
+    </div>
+  </nav>
+  <div class="content-box">
+    <div class="plant-card">
+      <h1>Blumea<br><small>(Blumea balsamifera)</small></h1>
+      <img src="blumea.jpg" alt="Blumea photo" class="plant-image" />
+      <div class="plant-info">
+        <h2>About Blumea Plant</h2>
+        <p>
+          Blumea, locally known and widely used in herbal medicine, is celebrated for its anti-inflammatory and antimicrobial properties.
+          The leaves and aerial parts have been traditionally applied for pain relief and wound treatment.
+        </p>
+        <h2>Medicinal Uses</h2>
+        <ul>
+          <li>Soothes skin inflammations and irritations</li>
+          <li>Treats respiratory ailments and cough</li>
+          <li>Used for wound healing and infection prevention</li>
+        </ul>
+        <h2>Preparation & Dosage</h2>
+        <p>
+          Blumea leaves are typically crushed and applied topically or boiled into decoctions for treating colds and skin conditions.
+        </p>
+        <h2>References</h2>
+        <ol>
+          <li>
+            Pang, Y., et al. (2014). Blumea balsamifera—A Phytochemical and Pharmacological Review. 
+            <i>Molecules, 19(7), 9453-9477.</i> 
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6272021/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Wang, J., et al. (2023). Chemical constituents and bioactivities of Blumea balsamifera.
+            <i>Food Science and Technology, 43.</i>
+            <a href="https://www.scielo.br/j/cta/a/6qFjsRhjx4CR3zjzMywQcJk/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Masyudi, M., et al. (2022). Effectiveness of gel formulation of capa leaf (Blumea balsamifera) on wound healing.
+            <i>F1000Research, 11, 964.</i>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9615488/" target="_blank">READ ARTICLE</a>
+          </li>
+        </ol>
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="plants.html" class="back-to-plants-btn">
+            Back to Plants
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mapModal" class="map-modal">
+    <div class="map-modal-content">
+      <button class="map-close" onclick="closeMapModal()">&times;</button>
+      <h2 class="map-title">Bukidnon Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012440.7334469832!2d124.44!3d8.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32552e7a0b8e6f3f%3A0x50cf67f0e34e4e1!2sBukidnon!5e0!3m2!1sen!2sph!4v1234567890" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+      <p class="map-description">Bukidnon is home to a rich diversity of medicinal plants.</p>
+    </div>
+  </div>
+
+  <script>
+    function openMapModal() {
+      document.getElementById('mapModal').classList.add('show');
+    }
+    function closeMapModal() {
+      document.getElementById('mapModal').classList.remove('show');
+    }
+  </script>
+</body>
+</html>

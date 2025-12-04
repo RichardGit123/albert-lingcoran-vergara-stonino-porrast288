@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuba-tuba (Jatropha curcas) Bukidnon Medicinal Plants</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="main-navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo" class="navbar-logo">
+    </a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="plants.html">Plants</a>
+      <a href="about.html">About Us</a>
+      <a href="#" class="map-btn" onclick="openMapModal(); return false;">Map</a>
+    </div>
+  </nav>
+  <div class="content-box">
+    <div class="plant-card">
+      <h1>Tuba-tuba<br><small>(Jatropha curcas)</small></h1>
+      <img src="tubatuba.jpg" alt="Tuba-tuba photo" class="plant-image" />
+      <div class="plant-info">
+        <h2>About Tuba-tuba Plant</h2>
+        <p>
+          Tuba-tuba, known scientifically as Jatropha curcas, is a plant used traditionally in Bukidnon for its medicinal and pesticidal properties.
+          Though its seeds are toxic if ingested, parts of the plant are used externally for skin conditions and to repel insects.
+        </p>
+        <h2>Medicinal Uses</h2>
+        <ul>
+          <li>Used as an anti-inflammatory for skin irritations</li>
+          <li>Applied topically for wound healing and cuts</li>
+          <li>Used as a natural pesticide and insect repellent</li>
+        </ul>
+        <h2>Preparation & Dosage</h2>
+        <p>
+          Extracts from leaves or seeds are crushed and applied externally. Internal use is not recommended due to toxicity.
+          Careful preparation ensures safety and efficacy.
+        </p>
+        <h2>References</h2>
+        <ol>
+          <li>
+            Tinpun, K., et al. (2020). In Vitro Studies of Jatropha curcas L. Latex Spray Formulation.
+            <i>Open Veterinary Journal, 10(2), 210-218.</i>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7336031/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Salim, M.N., et al. (2018). Anti-inflammatory activity of Jatropha curcas Linn. latex in wound healing process.
+            <i>Veterinary World, 11(7), 903-907.</i>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5891885/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Patil, D., et al. (2013). Evaluation of Jatropha curcas Linn. leaf extracts for its cytotoxicity and potential to inhibit hemagglutinin protein.
+            <i>Pharmacognosy Research, 5(4), 250-257.</i>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3784917/" target="_blank">READ ARTICLE</a>
+          </li>
+        </ol>
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="plants.html" class="back-to-plants-btn">
+            Back to Plants
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mapModal" class="map-modal">
+    <div class="map-modal-content">
+      <button class="map-close" onclick="closeMapModal()">&times;</button>
+      <h2 class="map-title">Bukidnon Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012440.7334469832!2d124.44!3d8.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32552e7a0b8e6f3f%3A0x50cf67f0e34e4e1!2sBukidnon!5e0!3m2!1sen!2sph!4v1234567890" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+      <p class="map-description">Bukidnon is home to a rich diversity of medicinal plants.</p>
+    </div>
+  </div>
+
+  <script>
+    function openMapModal() {
+      document.getElementById('mapModal').classList.add('show');
+    }
+    function closeMapModal() {
+      document.getElementById('mapModal').classList.remove('show');
+    }
+  </script>
+</body>
+</html>

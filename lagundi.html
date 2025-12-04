@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lagundi (Vitex negundo) Bukidnon Medicinal Plants</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="plants-page">
+  <nav class="main-navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo" class="navbar-logo">
+    </a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="plants.html">Plants</a>
+      <a href="about.html">About Us</a>
+      <a href="#" class="map-btn" onclick="openMapModal(); return false;">Map</a>
+    </div>
+  </nav>
+  <div class="content-box">
+    <div class="plant-card">
+      <h1>Lagundi<br><small>(Vitex negundo)</small></h1>
+      <img src="lagundi.jpg" alt="Lagundi photo" class="plant-image" />
+      <div class="plant-info">
+        <h2>About Lagundi Plant</h2>
+        <p>
+          Lagundi is perhaps the most extensively studied medicinal plant in the Philippines, scientifically proven to treat respiratory ailments.
+          It is a shrub widely found in Bukidnon and has been commercialized into cough syrups and tablets due to its potent anti-asthma properties.
+        </p>
+        <h2>Medicinal Uses</h2>
+        <ul>
+          <li>Highly effective for relieving coughs, colds, and asthma</li>
+          <li>Proven bronchodilating effects (opens airways)</li>
+          <li>Used to treat fever and flu symptoms due to analgesic properties</li>
+        </ul>
+        <h2>Preparation & Dosage</h2>
+        <p>
+          Leaves are boiled in water (decoction) and drunk as tea. For cough and asthma, a half-cup of the decoction is typically taken three times a day.
+          Commercially prepared capsules and syrups are also available.
+        </p>
+        <h2>References</h2>
+        <ol>
+          <li>
+            Abad, C. L., et al. (2013). A Systematic Review on Vitex negundo (Lagundi) for the Treatment of Acute Cough...
+            <i>Acta Medica Philippina, 47(3).</i>
+            <a href="https://actamedicaphilippina.upm.edu.ph/index.php/acta/article/download/1096/970/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Raekiansyah, M. (2025). Antiviral Activity of Medicinal Plant Extracts Vitex negundo against SARS-CoV-2.
+            <i>Plants, 14(5).</i>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12388886/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Bautista, N. S. (2012). Genetic Diversity of Vitex negundo L. (Lagundi) in the Philippines.
+            <i>Journal of Nature Studies, 14(1), 1-11.</i>
+            <a href="https://www.journalofnaturestudies.org/files/JNS14-1/14(1)%201-11%20Bautista-fullpaper.pdf" target="_blank">READ ARTICLE</a>
+          </li>
+        </ol>
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="plants.html" class="back-to-plants-btn">
+            Back to Plants
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mapModal" class="map-modal">
+    <div class="map-modal-content">
+      <button class="map-close" onclick="closeMapModal()">&times;</button>
+      <h2 class="map-title">Bukidnon Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012440.7334469832!2d124.44!3d8.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32552e7a0b8e6f3f%3A0x50cf67f0e34e4e1!2sBukidnon!5e0!3m2!1sen!2sph!4v1234567890" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+      <p class="map-description">Bukidnon is home to a rich diversity of medicinal plants.</p>
+    </div>
+  </div>
+
+  <script>
+    function openMapModal() {
+      document.getElementById('mapModal').classList.add('show');
+    }
+    function closeMapModal() {
+      document.getElementById('mapModal').classList.remove('show');
+    }
+  </script>
+</body>
+</html>

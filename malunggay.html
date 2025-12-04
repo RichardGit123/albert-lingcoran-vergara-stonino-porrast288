@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malunggay (Moringa oleifera) Bukidnon Medicinal Plants</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="main-navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo" class="navbar-logo">
+    </a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="plants.html">Plants</a>
+      <a href="about.html">About Us</a>
+      <a href="#" class="map-btn" onclick="openMapModal(); return false;">Map</a>
+    </div>
+  </nav>
+
+  <div class="content-box">
+    <div class="plant-card">
+      <h1>Malunggay<br><small>(Moringa oleifera)</small></h1>
+      
+      <img src="malunggay.jpg" alt="Malunggay Moringa" class="plant-image" />
+      
+      <div class="plant-info">
+        <h2>About Malunggay</h2>
+        <p>
+          Malunggay, also known as the "Miracle Tree" or "Drumstick Tree," is one of the most nutrient-dense plants in the world. 
+          Widely cultivated in Bukidnon and throughout the Philippines, every part of the tree—from leaves to roots—has medicinal and nutritional value. 
+          The leaves are exceptionally rich in vitamins A, C, calcium, iron, and protein, often surpassing common foods like carrots, oranges, and milk.
+        </p>
+
+        <h2>Medicinal Uses</h2>
+        <ul>
+          <li><strong>Nutritional Supplement:</strong> combats malnutrition with high levels of vitamins, minerals, and protein.</li>
+          <li><strong>Anti-inflammatory & Antioxidant:</strong> protects cells from damage and reduces inflammation.</li>
+          <li><strong>Blood Sugar Management:</strong> helps lower blood glucose levels in people with diabetes.</li>
+          <li><strong>Cardiovascular Health:</strong> supports heart health by lowering cholesterol and blood pressure.</li>
+          <li><strong>Lactation Support:</strong> traditionally used to increase breast milk production in nursing mothers.</li>
+          <li><strong>Immune Booster:</strong> strengthens the body's defense against infections.</li>
+        </ul>
+
+        <h2>Preparation & Dosage</h2>
+        <p>
+          <strong>Malunggay Tea:</strong>
+        </p>
+        <ul>
+          <li><strong>Fresh Leaves:</strong> Boil 1 cup of fresh leaves in 2 cups of water for 5-10 minutes.</li>
+          <li><strong>Dried Leaves:</strong> Add 1 tablespoon of dried malunggay powder to 1 cup of hot water. Let steep for 3-5 minutes.</li>
+          <li><strong>Dosage:</strong> Drink 1-2 cups daily for general wellness.</li>
+        </ul>
+        <p>
+          <strong>As Food:</strong> Fresh malunggay leaves can be added to soups (tinola), stir-fries, and salads for a nutritional boost.
+        </p>
+        <p>
+          <strong>Note:</strong> Pregnant women should consult a healthcare provider before consuming large amounts, as some parts of the plant may have abortifacient properties.
+        </p>
+
+        <h2>References</h2>
+        <ol>
+          <li>
+            Pareek, A., et al. (2023). <i>Moringa oleifera</i>: An Updated Comprehensive Review of Its Pharmacology, Toxicity, and Clinical Evidence.
+            <i>International Journal of Molecular Sciences, 24(2), 1178.</i>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9916933/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Gopalakrishnan, L., et al. (2016). <i>Moringa oleifera</i>: A review on nutritive importance and its medicinal application.
+            <i>Food Science and Human Wellness, 5(2), 49-56.</i>
+            <a href="https://www.sciencedirect.com/science/article/pii/S2213453016300362" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Alegbeleye, O. O., et al. (2018). How Functional Is <i>Moringa oleifera</i>? A Review of Its Nutritive, Medicinal, and Socioeconomic Potential.
+            <i>Food and Nutrition Bulletin, 39(1), 149-170.</i>
+            <a href="https://journals.sagepub.com/doi/10.1177/0379572117749814" target="_blank">READ ARTICLE</a>
+          </li>
+        </ol>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="plants2.html" class="back-to-plants-btn">
+            Back to Plants
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Modal -->
+  <div id="mapModal" class="map-modal">
+    <div class="map-modal-content">
+      <button class="map-close" onclick="closeMapModal()">&times;</button>
+      <h2 class="map-title">Bukidnon Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012440.7334469832!2d124.44!3d8.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32552e7a0b8e6f3f%3A0x50cf67f0e34e4e1!2sBukidnon!5e0!3m2!1sen!2sph!4v1234567890" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+      <p class="map-description">Bukidnon is home to a rich diversity of medicinal plants.</p>
+    </div>
+  </div>
+
+  <script>
+    function openMapModal() {
+      document.getElementById('mapModal').classList.add('show');
+    }
+    function closeMapModal() {
+      document.getElementById('mapModal').classList.remove('show');
+    }
+  </script>
+</body>
+</html>

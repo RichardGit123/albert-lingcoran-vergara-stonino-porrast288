@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pansit-Pansitan (Peperomia pellucida) Bukidnon Medicinal Plants</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="main-navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo" class="navbar-logo">
+    </a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="plants.html">Plants</a>
+      <a href="about.html">About Us</a>
+      <a href="#" class="map-btn" onclick="openMapModal(); return false;">Map</a>
+    </div>
+  </nav>
+  <div class="content-box">
+    <div class="plant-card">
+      <h1>Pansit-Pansitan<br><small>(Peperomia pellucida)</small></h1>
+      <img src="pansit-pansitan.jpg" alt="Pansit-Pansitan photo" class="plant-image" />
+      <div class="plant-info">
+        <h2>About Pansit-Pansitan</h2>
+        <p>
+          Pansit-Pansitan (also known as Ulasimang Bato) is a fleshy, heart-shaped herb that grows wild in the cool, damp areas of Bukidnon.
+          It is one of the 10 medicinal plants approved by the Philippine Department of Health (DOH), specifically for lowering uric acid levels.
+        </p>
+        <h2>Medicinal Uses</h2>
+        <ul>
+          <li><strong>Lowers Uric Acid:</strong> Clinically proven effective for treating gout and rheumatism.</li>
+          <li><strong>Anti-inflammatory:</strong> Reduces joint pain and swelling.</li>
+          <li><strong>Analgesic:</strong> Provides natural pain relief.</li>
+        </ul>
+        <h2>Preparation & Dosage</h2>
+        <p>
+          <strong>Salad:</strong> Wash fresh leaves thoroughly and eat raw (1 cup daily) as a salad side dish.<br>
+          <strong>Tea:</strong> Boil 1 cup of clean leaves in 2 cups of water for 15 minutes (do not cover the pot). Drink 1/2 cup 3 times a day.
+        </p>
+        <h2>References</h2>
+        <ol>
+          <li>
+            de Fátima Arrigoni-Blank, M., et al. (2004). Anti-inflammatory and analgesic activity of <i>Peperomia pellucida</i> (L.) HBK (Piperaceae).
+            <i>Journal of Ethnopharmacology, 91(2-3), 215-218.</i>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/15120441/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Tuan, C. T., et al. (2024). <i>Peperomia pellucida's</i> Ingredients, Antioxidant Properties, and Safe Dosage Determination.
+            <i>Pharmaceuticals, 17(9), 1228.</i>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11637809/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Fatima, H., et al. (2024). Anti-inflammatory effectiveness of <i>Peperomia pellucida</i> (L.) Kunth in rats with induced periodontitis.
+            <i>Heliyon, 10(21), e39560.</i>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11558638/" target="_blank">READ ARTICLE</a>
+          </li>
+        </ol>
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="plants2.html" class="back-to-plants-btn">
+            Back to Plants
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Map Modal -->
+  <div id="mapModal" class="map-modal">
+    <div class="map-modal-content">
+      <button class="map-close" onclick="closeMapModal()">&times;</button>
+      <h2 class="map-title">Bukidnon Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012440.7334469832!2d124.44!3d8.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32552e7a0b8e6f3f%3A0x50cf67f0e34e4e1!2sBukidnon!5e0!3m2!1sen!2sph!4v1234567890" 
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      <p class="map-description">Bukidnon is home to a rich diversity of medicinal plants.</p>
+    </div>
+  </div>
+
+  <script>
+    function openMapModal() { document.getElementById('mapModal').classList.add('show'); }
+    function closeMapModal() { document.getElementById('mapModal').classList.remove('show'); }
+  </script>
+</body>
+</html>

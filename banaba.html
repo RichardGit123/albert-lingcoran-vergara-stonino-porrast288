@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banaba (Lagerstroemia speciosa) Bukidnon Medicinal Plants</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="main-navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo" class="navbar-logo">
+    </a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="plants.html">Plants</a>
+      <a href="about.html">About Us</a>
+      <a href="#" class="map-btn" onclick="openMapModal(); return false;">Map</a>
+    </div>
+  </nav>
+
+  <div class="content-box">
+    <div class="plant-card">
+      <h1>Banaba<br><small>(Lagerstroemia speciosa)</small></h1>
+      
+      <img src="banaba.jpg" alt="Banaba" class="plant-image" />
+      
+      <div class="plant-info">
+        <h2>About Banaba</h2>
+        <p>
+          Banaba, also known as the "Queen's Flower" or "Pride of India," is a medicinal tree native to the Philippines and widely cultivated in Bukidnon. 
+          Its leaves have been used in traditional medicine for centuries to treat diabetes and kidney problems. 
+          Banaba contains <strong>corosolic acid</strong>, a compound scientifically proven to lower blood sugar levels and improve insulin sensitivity.
+        </p>
+
+        <h2>Medicinal Uses</h2>
+        <ul>
+          <li><strong>Blood Sugar Control:</strong> effectively lowers blood glucose levels in people with Type 2 diabetes and prediabetes.</li>
+          <li><strong>Weight Management:</strong> supports healthy weight loss by regulating metabolism and reducing fat accumulation.</li>
+          <li><strong>Cholesterol Reduction:</strong> helps lower LDL cholesterol and triglyceride levels.</li>
+          <li><strong>Kidney Health:</strong> traditionally used to treat kidney disorders and urinary problems.</li>
+          <li><strong>Antioxidant Properties:</strong> protects cells from oxidative stress and free radical damage.</li>
+        </ul>
+
+        <h2>Preparation & Dosage</h2>
+        <p>
+          <strong>Banaba Tea:</strong>
+        </p>
+        <ul>
+          <li><strong>Fresh Leaves:</strong> Boil 5-10 fresh banaba leaves in 2-3 cups of water for 10-15 minutes.</li>
+          <li><strong>Dried Leaves:</strong> Boil 5-10 dried leaves in 2-3 cups of water for 10-15 minutes. Let steep, then strain.</li>
+          <li><strong>Dosage:</strong> Drink 1 cup, 2-3 times daily before meals for best results.</li>
+        </ul>
+        <p>
+          <strong>Capsules/Tablets:</strong> Standardized banaba extract capsules containing 1% corosolic acid are available. Typical dosage is 32-48 mg daily.
+        </p>
+        <p>
+          <strong>Caution:</strong> Monitor blood sugar levels closely if you are taking diabetes medications, as banaba may enhance their effects.
+        </p>
+
+        <h2>References</h2>
+        <ol>
+          <li>
+            Miura, T., et al. (2012). Management of Diabetes and Its Complications with Banaba (<i>Lagerstroemia speciosa</i> L.) and Corosolic Acid.
+            <i>Evidence-Based Complementary and Alternative Medicine, 2012, 871495.</i>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3468018/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Stohs, S. J., et al. (2012). A review of the efficacy and safety of banaba (<i>Lagerstroemia speciosa</i> L.) and corosolic acid.
+            <i>Phytotherapy Research, 26(3), 317-324.</i>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/22095937/" target="_blank">READ ARTICLE</a>
+          </li>
+          <li>
+            Philippine Council for Health Research and Development (PCHRD). Banaba Tablets: Standardized herbal supplement with blood sugar lowering health benefits.
+            <a href="https://www.pchrd.dost.gov.ph/heartnovation/banaba-tablets-standardized-herbal-supplement-with-blood-sugar-lowering-health-benefits/" target="_blank">READ ARTICLE</a>
+          </li>
+        </ol>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="plants2.html" class="back-to-plants-btn">
+            Back to Plants
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Modal -->
+  <div id="mapModal" class="map-modal">
+    <div class="map-modal-content">
+      <button class="map-close" onclick="closeMapModal()">&times;</button>
+      <h2 class="map-title">Bukidnon Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012440.7334469832!2d124.44!3d8.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32552e7a0b8e6f3f%3A0x50cf67f0e34e4e1!2sBukidnon!5e0!3m2!1sen!2sph!4v1234567890" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+      <p class="map-description">Bukidnon is home to a rich diversity of medicinal plants.</p>
+    </div>
+  </div>
+
+  <script>
+    function openMapModal() {
+      document.getElementById('mapModal').classList.add('show');
+    }
+    function closeMapModal() {
+      document.getElementById('mapModal').classList.remove('show');
+    }
+  </script>
+</body>
+</html>

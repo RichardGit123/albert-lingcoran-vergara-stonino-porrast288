@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More Medicinal Plants - Bukidnon</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+<body>
+  <!-- Loading Screen WAHHHHHHHH -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loader-content">
+      <div class="leaf-loader">
+        <svg viewBox="0 0 100 100" class="leaf-svg">
+          <defs>
+            <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#66bb6a;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#2e7d32;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <path class="leaf-path" d="M50,10 Q80,30 85,60 Q80,80 50,90 Q20,80 15,60 Q20,30 50,10 Z" 
+                fill="url(#leafGradient)" opacity="0.9"/>
+          <path class="leaf-vein" d="M50,10 L50,90" stroke="#1b5e20" stroke-width="2" opacity="0.6"/>
+          <path class="leaf-vein" d="M50,30 Q60,35 65,45" stroke="#1b5e20" stroke-width="1" opacity="0.5"/>
+          <path class="leaf-vein" d="M50,30 Q40,35 35,45" stroke="#1b5e20" stroke-width="1" opacity="0.5"/>
+          <path class="leaf-vein" d="M50,50 Q60,55 65,65" stroke="#1b5e20" stroke-width="1" opacity="0.5"/>
+          <path class="leaf-vein" d="M50,50 Q40,55 35,65" stroke="#1b5e20" stroke-width="1" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="loading-text">
+        <h2>Healing Bukidnon</h2>
+        <p>Loading more medicinal plants...</p>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-navbar">
+    <img src="logo.png" class="navbar-logo" alt="Logo">
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="plants.html">Plants</a>
+      <a href="about.html">About Us</a>
+      <a href="#" id="mapBtn" class="map-btn">Map</a>
+    </div>
+  </nav>
+
+  <!-- Map Modal Ba -->
+  <div id="mapModal" class="map-modal">
+    <div class="map-modal-content">
+      <button class="map-close" id="closeMap">&times;</button>
+      <h2 class="map-title">Bukidnon Province Map</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015886.7299815916!2d124.28426607812499!3d7.883333299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff9c64a5e6ad47%3A0x4a7b8f3f2e7a8f0a!2sBukidnon!5e0!3m2!1sen!2sph!4v1698499999999!5m2!1sen!2sph" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <p class="map-description">Bukidnon is a province in Northern Mindanao, Philippines, known for its rich biodiversity and indigenous medicinal plants.</p>
+    </div>
+  </div>
+
+  <section class="plants-gallery">
+    <div class="section-title">
+      More Medicinal Plants of Bukidnon
+    </div>
+    
+    <!-- I love barney -->
+    <div class="search-container">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search more plants..." class="search-input">
+      </div>
+    </div>
+    
+    <!-- Search Results Badge -->
+    <div id="searchResults" class="search-results" style="display: none;"></div>
+
+    <div class="showcase-circles">
+      
+      <!-- Turmeric -->
+        <div class="circle-card">
+     <a href="turmeric.html" class="circle-link">
+    <img src="turmeric.jpg" alt="Turmeric" class="circle-img">
+    <div class="circle-label">Turmeric</div>
+    <div class="sci-name">(Curcuma longa)</div>
+      </a>
+    </div>
+
+      <!-- Ampalaya -->
+      <div class="circle-card">
+        <a href="ampalaya.html" class="circle-link">
+          <img src="ampalaya.jpg" alt="Ampalaya" class="circle-img">
+          <div class="circle-label">Ampalaya</div>
+          <div class="sci-name">(Momordica charantia)</div>
+        </a>
+      </div>
+
+      <!-- Oregano -->
+      <div class="circle-card">
+        <a href="oregano.html" class="circle-link">
+          <img src="oregano.jpg" alt="Oregano" class="circle-img">
+          <div class="circle-label">Oregano</div>
+          <div class="sci-name">(Origanum vulgare)</div>
+        </a>
+      </div>
+
+      <!-- Cheese Malunggay Hot Pandesal -->
+      <div class="circle-card">
+        <a href="malunggay.html" class="circle-link">
+          <img src="malunggay.avif" alt="Malunggay" class="circle-img">
+          <div class="circle-label">Malunggay</div>
+          <div class="sci-name">(Moringa oleifera)</div>
+        </a>
+      </div>
+
+      <!-- Banaba -->
+      <div class="circle-card">
+        <a href="banaba.html" class="circle-link">
+          <img src="banaba.jpg" alt="Banaba" class="circle-img">
+          <div class="circle-label">Banaba</div>
+          <div class="sci-name">(Lagerstroemia speciosa)</div>
+        </a>
+      </div>
+
+      <!-- Tawa-Tawa -->
+      <div class="circle-card">
+        <a href="tawatawa.html" class="circle-link">
+          <img src="tawatawa.jpg" alt="Tawa-Tawa" class="circle-img">
+          <div class="circle-label">Tawa-Tawa</div>
+          <div class="sci-name">(Euphorbia hirta)</div>
+        </a>
+      </div>
+
+          <!-- Pansit-Pansitan -->
+    <div class="circle-card">
+      <a href="pansit-pansitan.html" class="circle-link">
+        <img src="pansit-pansitan.jpg" alt="Pansit-Pansitan" class="circle-img">
+        <div class="circle-label">Pansit-Pansitan</div>
+        <div class="sci-name">(Peperomia pellucida)</div>
+      </a>
+    </div>
+
+    <!-- Tsaang Gubat -->
+    <div class="circle-card">
+      <a href="tsaang-gubat.html" class="circle-link">
+        <img src="tsaang-gubat.jpg" alt="Tsaang Gubat" class="circle-img">
+        <div class="circle-label">Tsaang Gubat</div>
+        <div class="sci-name">(Ehretia microphylla)</div>
+      </a>
+    </div>
+
+    <!-- Guyabano -->
+    <div class="circle-card">
+      <a href="guyabano.html" class="circle-link">
+        <img src="guyabano.jpg" alt="Guyabano" class="circle-img">
+        <div class="circle-label">Guyabano</div>
+        <div class="sci-name">(Annona muricata)</div>
+      </a>
+    </div>
+
+    <div class="placeholder"></div>
+
+    <div class="see-more-plants-container">
+      <a href="plants.html" class="see-more-plants-btn">Back to Main List</a>
+    </div>
+
+    </div>
+  </section>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const plantCards = document.querySelectorAll('.circle-card');
+
+    if (searchInput && searchResults && plantCards.length > 0) {
+      searchInput.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        
+        if (searchTerm === '') {
+          searchResults.style.display = 'none';
+          plantCards.forEach(card => {
+            card.style.display = '';
+          });
+          return;
+        }
+
+        let foundCount = 0;
+        plantCards.forEach(card => {
+          const label = card.querySelector('.circle-label');
+          const sciName = card.querySelector('.sci-name');
+          
+          const plantName = label ? label.textContent.toLowerCase() : '';
+          const scientificName = sciName ? sciName.textContent.toLowerCase() : '';
+          
+          if (plantName.includes(searchTerm) || scientificName.includes(searchTerm)) {
+            card.style.display = '';
+            foundCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        searchResults.style.display = 'block';
+        
+        if (foundCount === 0) {
+          searchResults.textContent = 'No plants found';
+          searchResults.classList.add('no-results');
+        } else {
+          const plantWord = foundCount === 1 ? 'plant' : 'plants';
+          searchResults.textContent = `${foundCount} ${plantWord} found`;
+          searchResults.classList.remove('no-results');
+        }
+      });
+    }
+  });
+  </script>
+
+  <!-- Map Script -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mapBtn = document.getElementById('mapBtn');
+    const mapModal = document.getElementById('mapModal');
+    const closeMap = document.getElementById('closeMap');
+
+    if (mapBtn) {
+      mapBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        mapModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    if (closeMap) {
+      closeMap.addEventListener('click', function() {
+        mapModal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+      });
+    }
+
+    if (mapModal) {
+      mapModal.addEventListener('click', function(e) {
+        if (e.target === mapModal) {
+          mapModal.classList.remove('show');
+          document.body.style.overflow = 'auto';
+        }
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mapModal.classList.contains('show')) {
+        mapModal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+  </script>
+
+  <!-- Wall Hack ni No Clip -->
+  <script>
+    window.addEventListener('load', function() {
+      const loadingScreen = document.getElementById('loadingScreen');
+      
+      setTimeout(function() {
+        loadingScreen.classList.add('hidden');
+        setTimeout(function() {
+          loadingScreen.remove();
+        }, 500);
+      }, 1500);
+    });
+
+    setTimeout(function() {
+      const loadingScreen = document.getElementById('loadingScreen');
+      if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+        loadingScreen.classList.add('hidden');
+        setTimeout(function() {
+          loadingScreen.remove();
+        }, 500);
+      }
+    }, 3000);
+  </script>
+
+</body>
+</html>
