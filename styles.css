@@ -238,10 +238,11 @@ html, body {
   max-width: 90%;
 }
 
+/* For premium looking */
 .content-box {
   max-width: 1100px;
-  margin: 40px auto 60px auto;      
-  padding: 50px 40px;               
+  margin: 40px auto 60px auto;      /* was 60px auto 80px auto */
+  padding: 50px 40px;               /* was 68px 56px */
   background: linear-gradient(145deg, 
               rgba(255,255,255,0.98) 0%, 
               rgba(248,255,252,0.96) 100%);
@@ -292,7 +293,7 @@ html, body {
 }
 
 body {
-  padding-top: 0px; 
+  padding-top: 0px; /* Match your navbar height exactly */
   margin: 0;
 }
 
@@ -316,12 +317,9 @@ body {
 }
 
 .navbar-logo {
-  height: 95px;
-  width: 95px;
-  border-radius: 50%;
+  height: 100px;
+  width: 100px;
   object-fit: cover;
-  background: #14a307;
-  box-shadow: 0 2px 16px #17e94462;
   transition: filter 0.15s, transform 0.15s;
   display: block;
   flex-shrink: 0;
@@ -465,11 +463,11 @@ body {
 }
 
 .carousel-arrow.left {
-  left: 10px; 
+  left: 10px; /* Inside the carousel container */
 }
 
 .carousel-arrow.right {
-  right: 10px; 
+  right: 10px; /* Inside the carousel container */
 }
 
 .carousel-arrow:hover {
@@ -1905,4 +1903,8 @@ body {
   border-color: #1a7a44;
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(26, 122, 68, 0.25);
+
 }
+
+
+
